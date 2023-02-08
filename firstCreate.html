@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background: skyblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+      }
+
+      h1 {
+        text-align: center;
+      }
+     
+    </style>
+    <title>draftAstroEmt</title>
+</head>
+
+<body>
+
+    <!-- <img class="img" src="./accets/emtelco.jpg" alt="img"> -->
+
+    <h1>Tipificación-Pendiente correcto</h1>
+    <!-- <p>Categorización de No Realización de Visita</p> -->
+    <br>
+    <form>
+        <label for="reason">Motivo de la No Realización de Visita:</label>
+        <br><br>
+        <textarea id="reason" name="reason"></textarea>
+        <button type="submit">Categorizar</button>
+      </form>
+      <br><br>
+      <div id="result"></div>
+      <a href="./E-card.html">E-card-Refuerzo-Conceptos-de-Pendientes</a>
+      <script>
+        const form = document.querySelector('form');
+        const result = document.querySelector('#result');
+  
+        form.addEventListener('submit', event => {
+          event.preventDefault();
+          const lowerCaseReason = document.querySelector('#reason').value.toLowerCase();
+          /*const reason = document.querySelector('#reason').value; */
+          let category;
+  
+          if (lowerCaseReason.includes('cliente no fue contactado')) {
+            category = 'Imputable al cliente';
+          } else if (lowerCaseReason.includes('cliente no autoriza')) {
+            category = 'Orden del cliente';
+          } else {
+            category = 'Mala asignación';
+          }
+  
+          result.textContent = `El padre correspondiente es: ${category}`;
+        });
+      </script>
+</body>
+</html>
