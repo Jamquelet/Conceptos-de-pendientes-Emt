@@ -34,27 +34,8 @@
       </form>
       <br><br>
       <div id="result"></div>
+      <br>
       <a href="./E-card.html">E-card-Refuerzo-Conceptos-de-Pendientes</a>
-      <script>
-        const form = document.querySelector('form');
-        const result = document.querySelector('#result');
-  
-        form.addEventListener('submit', event => {
-          event.preventDefault();
-          const lowerCaseReason = document.querySelector('#reason').value.toLowerCase();
-          /*const reason = document.querySelector('#reason').value; */
-          let category;
-  
-          if (lowerCaseReason.includes('cliente no fue contactado')) {
-            category = 'Imputable al cliente';
-          } else if (lowerCaseReason.includes('cliente no autoriza')) {
-            category = 'Orden del cliente';
-          } else {
-            category = 'Mala asignación';
-          }
-  
-          result.textContent = `El padre correspondiente es: ${category}`;
-        });
-      </script>
+      <script type="text/javascript" src="./logic.js"></script>
 </body>
 </html>
