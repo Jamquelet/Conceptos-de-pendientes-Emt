@@ -1,0 +1,94 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-blue: #0c2e6d;
+    --sm: 14px;
+    --md:16px;
+    --lg:18px;
+}
+body {
+    margin: 0;
+    background-image: url(./accets/emtelco.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    /* background-position: center; */
+    font-family: 'Quicksand', sans-serif;  
+  }
+  .card {
+    background-color: var(--text-input-field);
+    /*text-align: right; */
+    width: 300px;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    grid-template-rows: auto 1fr auto;
+    padding: 10px;
+    position: absolute;
+    right: 15%;
+    margin-top: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0;
+  }
+  .card a {
+    color: var(--hospital-blue);
+    font-size: var(--sm);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form p {
+    text-align: center;
+    color: var(--hospital-blue);
+    font-size: var(--lg);
+    margin-top: 20px;
+    margin-bottom: 36px;
+  }
+  .label {
+    font-size: var(--md);
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  #reason {
+    background-color: var(--white);
+    border: none;
+    border-radius: 8px;
+    height: 60px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px 0;
+  }
+  .botton {
+    background-color: var(--hospital-blue);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 30px;
+  }
+   #result {
+    text-align: center;
+    /*background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-blue);
+    color: var(--hospital-blue);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;*/
+  }
+
+
+  
