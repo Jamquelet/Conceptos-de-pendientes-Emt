@@ -89,6 +89,20 @@ body {
     font-size: var(--md);
     font-weight: bold;*/
   }
-
+  .p {
+    font-size: 9.5px;
+    background-color: var(--hospital-blue);
+    color: var(--white);
+    /*text-align: right; */
+    width: 58px;
+    height: 35vh;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    position: absolute;
+    right: 4%;
+    margin-top: 100px;
+    border-radius: 8px;
+  }
 
   
