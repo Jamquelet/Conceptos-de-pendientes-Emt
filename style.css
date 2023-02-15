@@ -104,5 +104,23 @@ body {
     margin-top: 100px;
     border-radius: 8px;
   }
+  @media (max-width: 640px) { 
+    body {
+      background-image: none;
+    }
+    .p {
+      display: none;
+    }
+    .card {
+      height: 93%;
+      width: 93%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      
+    }}
 
-  
+
