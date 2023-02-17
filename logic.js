@@ -60,7 +60,7 @@ form.addEventListener('submit', event => {
           } else if (redExterna.split(',').some(r=>lowerCaseReason.includes(r.trim()))) {
             category = ('OT-T04-Red Externa');
           } else {
-            category = 'Refresque la página e ingrese un poco más de información';
+            category = 'ingrese un poco más de información';
           }
   
           result.textContent = `El pendiente correspondiente es: ${category}`;
